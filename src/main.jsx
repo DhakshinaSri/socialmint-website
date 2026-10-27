@@ -12,7 +12,7 @@ const basename = import.meta.env.BASE_URL.replace(/\/+$/, '');
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename={basename}>
+    <BrowserRouter basename="/socialmint-website">
       <App />
     </BrowserRouter>
   </React.StrictMode>,
