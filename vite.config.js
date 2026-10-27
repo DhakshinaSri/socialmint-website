@@ -14,7 +14,7 @@ export default defineConfig(({ command, mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
   const base = command === 'serve' ? '/' : normalizeBase(env.VITE_BASE || '/socialmint-website/');
   return {
-    base,
+    base: /socialmint-website/,
     plugins: [react()],
     build: { outDir: 'dist', sourcemap: false },
   };
